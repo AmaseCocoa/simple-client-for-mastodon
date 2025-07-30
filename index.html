@@ -211,6 +211,10 @@
                     const data = JSON.parse(event.data);
                     if (data.event === 'update') {
                         addMessage(JSON.parse(data.payload));
+                    } else if (data.error === 'No local stream provided') {
+                        alert('このサーバーではローカルタイムラインを利用できません。');
+                        toggleEditability(true);
+                        socket.close();
                     }
                 };
 
