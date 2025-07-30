@@ -1,2 +1,2 @@
-# Simple Client for Misskey
-Misskey用のシンプルなクライアント
+# Simple Client for Mastodon
+Mastodon用のシンプルなクライアント
